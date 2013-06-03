@@ -15,7 +15,6 @@ Vagrant.configure("2") do |config|
    config.vm.network :private_network, ip: "192.168.11.10"
 
 
-
    VAGRANT_JSON = JSON.parse(Pathname(__FILE__).dirname.join('nodes', 'vagrant.json').read)
 
    config.vm.provision :chef_solo do |chef|

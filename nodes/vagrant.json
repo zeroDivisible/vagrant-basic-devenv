@@ -43,6 +43,7 @@
    },
 
    "run_list" : [
+      "recipe[networking]",
       "recipe[simple_iptables]",
       "recipe[postgresql]",
       "recipe[postgresql::server]",

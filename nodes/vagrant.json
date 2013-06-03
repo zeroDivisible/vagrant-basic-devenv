@@ -43,10 +43,16 @@
    },
 
    "run_list" : [
+      "recipe[simple_iptables]",
       "recipe[postgresql]",
       "recipe[postgresql::server]",
 
       "recipe[vim]",
-      "recipe[redis]"
+      "recipe[redis]",
+      "recipe[zsh]",
+
+
+      // custom recipes from site-cookbooks
+      "recipe[iptables_rules]"
    ]
 }

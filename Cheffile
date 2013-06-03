@@ -3,7 +3,8 @@
 
 site 'http://community.opscode.com/api/v1'
 
+cookbook 'simple_iptables'
 cookbook 'postgresql'
 cookbook 'redis'
 cookbook 'vim'
-cookbook 'yum'
+cookbook 'zsh'
